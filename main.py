@@ -3,8 +3,8 @@ import httpx,random,string,threading
 
 def checker():
         
-        proxy_data = open('proxy.txt', 'r').read().splitlines()
-        proxy = 'http://' + random.choice(proxy_data)
+        prx = open('proxy.txt', 'r').read().splitlines()
+        proxy = 'http://' + random.choice(prx)
         headers = {
             'Accept': '*/*',
             'Accept-Language': 'pl-PL',
